@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyer - Villa Gänseblümchen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts für kindgerechte, freundliche Schriftarten -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'headline': ['"Baloo 2"', 'cursive'],
+                        'body': ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        'daisy-yellow': '#FFD166',
+                        'daisy-white': '#FFFCF2',
+                        'daisy-green': '#06D6A0',
+                        'daisy-dark': '#264653',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f0fdf4;
+            background-image: radial-gradient(#dcfce7 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        h1, h2, h3 {
+            font-family: '"Baloo 2"', cursive;
+        }
+        .blob-shape {
+            border-radius: 53% 47% 73% 27% / 37% 51% 49% 63%;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 sm:p-8">
+
+    <!-- Flyer Container (A4 ähnliche Proportionen auf großen Bildschirmen) -->
+    <div class="max-w-2xl w-full bg-white rounded-[2rem] shadow-2xl overflow-hidden border-4 border-yellow-200 relative">
+        
+        <!-- Deko Elemente Gänseblümchen -->
+        <div class="absolute top-4 left-4 text-daisy-yellow opacity-40">
+            <i data-lucide="flower-2" class="w-12 h-12"></i>
+        </div>
+        <div class="absolute top-16 right-6 text-daisy-yellow opacity-40">
+            <i data-lucide="flower-2" class="w-8 h-8"></i>
+        </div>
+
+        <!-- Header -->
+        <div class="bg-gradient-to-b from-yellow-50 to-white pt-12 pb-8 px-6 text-center relative">
+            <div class="mx-auto w-48 h-56 mb-2 flex items-center justify-center">
+                <img src="LogoGaensebluemchen.jpeg" alt="Fröhliche Gänseblümchen Logo" class="max-w-full max-h-full object-contain mix-blend-multiply">
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-daisy-dark tracking-tight mb-2">
+                Villa <span class="text-daisy-yellow drop-shadow-sm">Gänseblümchen</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-daisy-green font-bold">
+                Liebevolle Kindertagespflege in Schlatt unter Krähen
+            </p>
+            <div class="mt-4 inline-block bg-daisy-green text-white font-bold py-1 px-4 rounded-full text-lg shadow-sm">
+                Für Kinder von 0 bis 3 Jahren
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="px-6 sm:px-12 py-6 text-daisy-dark">
+            <p class="text-lg text-center mb-8 font-medium leading-relaxed">
+                Ein Ort zum Spielen, Lachen, Lernen und Wohlfühlen. In unserer familiären Kleingruppe steht die individuelle und behutsame Entwicklung Ihres Kindes an allererster Stelle. Die Betreuung findet in privaten geeigneten Räumen statt. Unser Angebot gilt für Kinder aus Singen, inklusive der Ortsteile.
+            </p>
+
+            <!-- Highlights Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                
+                <div class="flex items-start space-x-4 bg-yellow-50 p-4 rounded-2xl">
+                    <div class="bg-daisy-yellow p-2 rounded-xl text-white shadow-sm shrink-0">
+                        <i data-lucide="pen" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-1 text-daisy-dark">Proffesionelle Betreuung</h3>
+                        <p class="text-sm text-gray-600">Die Betreuung erfolgt durch zwei gelernte Erzieherinnen mit Weiterbildung zur Kindertagespflegeperson</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4 bg-green-50 p-4 rounded-2xl">
+                    <div class="bg-daisy-green p-2 rounded-xl text-white shadow-sm shrink-0">
+                        <i data-lucide="sun" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-1 text-daisy-dark">Eigener Garten</h3>
+                        <p class="text-sm text-gray-600">Täglich an die frische Luft! Viel Platz zum Toben, Entdecken und Matschen.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4 bg-green-50 p-4 rounded-2xl">
+                    <div class="bg-daisy-green p-2 rounded-xl text-white shadow-sm shrink-0">
+                        <i data-lucide="apple" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-1 text-daisy-dark">Gesunde Ernährung</h3>
+                        <p class="text-sm text-gray-600">Frisch gekochte, regionale und kindgerechte Mahlzeiten jeden Tag.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4 bg-yellow-50 p-4 rounded-2xl">
+                    <div class="bg-daisy-yellow p-2 rounded-xl text-white shadow-sm shrink-0">
+                        <i data-lucide="palette" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-1 text-daisy-dark">Kreatives Spielen</h3>
+                        <p class="text-sm text-gray-600">Altersgerechte Förderung durch Musik, Basteln und freies Spiel.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Call to Action Banner -->
+        <div class="bg-gradient-to-r from-daisy-yellow to-yellow-300 py-6 px-6 text-center transform -skew-y-1 my-4 mx-[-10px]">
+            <div class="transform skew-y-1">
+                <h2 class="text-2xl font-bold text-daisy-dark mb-1">Wir haben noch Plätze frei!</h2>
+                <p class="text-daisy-dark font-medium text-lg">Vereinbaren Sie jetzt ein unverbindliches Kennenlernen.</p>
+            </div>
+        </div>
+
+        <!-- Footer / Contact Info -->
+        <div class="bg-white px-6 sm:px-12 py-8 text-daisy-dark">
+            <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6">
+                
+                <!-- Contact Details -->
+                <div class="space-y-3 w-full sm:w-1/2">
+                    <div class="flex items-center space-x-3 text-gray-700">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-daisy-green"></i>
+                        <span>Blumenweg 12, 12345 Sonnenstadt</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-gray-700">
+                        <i data-lucide="phone" class="w-5 h-5 text-daisy-green"></i>
+                        <span class="font-bold">0123 / 456 78 90</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-gray-700">
+                        <i data-lucide="mail" class="w-5 h-5 text-daisy-green"></i>
+                        <span>hallo@villa-gaensebluemchen.de</span>
+                    </div>
+                </div>
+
+                <!-- Info Box -->
+                <div class="w-full sm:w-1/2 bg-gray-50 p-4 rounded-xl border border-gray-100 text-center sm:text-left">
+                    <h3 class="font-bold text-daisy-dark mb-2 flex items-center justify-center sm:justify-start gap-2">
+                        <i data-lucide="clock" class="w-4 h-4 text-daisy-yellow"></i>
+                        Betreuungszeiten
+                    </h3>
+                    <p class="text-sm text-gray-600">Montag - Freitag</p>
+                    <p class="text-sm font-bold text-daisy-dark">07:30 - 15:00 Uhr</p>
+                    <p class="text-xs text-gray-500 mt-1">(flexible Modelle auf Anfrage)</p>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Bottom Accent Line -->
+        <div class="h-3 w-full bg-daisy-green"></div>
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
