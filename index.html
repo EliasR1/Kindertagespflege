@@ -1,179 +1,293 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villa Gänseblümchen</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts für kindgerechte, freundliche Schriftarten -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'headline': ['"Baloo 2"', 'cursive'],
-                        'body': ['Nunito', 'sans-serif'],
-                    },
-                    colors: {
-                        'daisy-yellow': '#FFD166',
-                        'daisy-white': '#FFFCF2',
-                        'daisy-green': '#06D6A0',
-                        'daisy-dark': '#264653',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Nunito', sans-serif;
-            background-color: #f0fdf4;
-            background-image: radial-gradient(#dcfce7 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
-        h1, h2, h3 {
-            font-family: '"Baloo 2"', cursive;
-        }
-        .blob-shape {
-            border-radius: 53% 47% 73% 27% / 37% 51% 49% 63%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Villa Gänseblümchen – Kindertagespflege in Schlatt unter Krähen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
-<body class="min-h-screen flex items-center justify-center p-4 sm:p-8">
+<body>
 
-    <!-- Flyer Container (A4 ähnliche Proportionen auf großen Bildschirmen) -->
-    <div class="max-w-2xl w-full bg-white rounded-[2rem] shadow-2xl overflow-hidden border-4 border-yellow-200 relative">
-        
-        <!-- Deko Elemente Gänseblümchen -->
-        <div class="absolute top-4 left-4 text-daisy-yellow opacity-40">
-            <i data-lucide="flower-2" class="w-12 h-12"></i>
-        </div>
-        <div class="absolute top-16 right-6 text-daisy-yellow opacity-40">
-            <i data-lucide="flower-2" class="w-8 h-8"></i>
-        </div>
-
-        <!-- Header -->
-        <div class="bg-gradient-to-b from-yellow-50 to-white pt-12 pb-8 px-6 text-center relative">
-            <div class="mx-auto w-48 h-56 mb-2 flex items-center justify-center">
-                <img src="LogoGaensebluemchen.jpeg" alt="Fröhliche Gänseblümchen Logo" class="max-w-full max-h-full object-contain mix-blend-multiply">
-            </div>
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-daisy-dark tracking-tight mb-2">
-                Villa <span class="text-daisy-yellow drop-shadow-sm">Gänseblümchen</span>
-            </h1>
-            <p class="text-xl sm:text-2xl text-daisy-green font-bold">
-                Liebevolle Kindertagespflege in Schlatt unter Krähen
-            </p>
-            <div class="mt-4 inline-block bg-daisy-green text-white font-bold py-1 px-4 rounded-full text-lg shadow-sm">
-                Für Kinder von 0 bis 3 Jahren
-            </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="px-6 sm:px-12 py-6 text-daisy-dark">
-            <p class="text-lg text-center mb-8 font-medium leading-relaxed">
-                Ein Ort zum Spielen, Lachen, Lernen und Wohlfühlen. In unserer familiären Kleingruppe steht die individuelle und behutsame Entwicklung Ihres Kindes an allererster Stelle. Die Betreuung findet in privaten geeigneten Räumen statt. Unser Angebot gilt für Kinder aus Singen, inklusive der Ortsteile.
-            </p>
-
-            <!-- Highlights Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                
-                <div class="flex items-start space-x-4 bg-yellow-50 p-4 rounded-2xl">
-                    <div class="bg-daisy-yellow p-2 rounded-xl text-white shadow-sm shrink-0">
-                        <i data-lucide="pen" class="w-6 h-6"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-1 text-daisy-dark">Proffesionelle Betreuung</h3>
-                        <p class="text-sm text-gray-600">Die Betreuung erfolgt durch zwei gelernte Erzieherinnen mit Weiterbildung zur Kindertagespflegeperson</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-4 bg-green-50 p-4 rounded-2xl">
-                    <div class="bg-daisy-green p-2 rounded-xl text-white shadow-sm shrink-0">
-                        <i data-lucide="sun" class="w-6 h-6"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-1 text-daisy-dark">Eigener Garten</h3>
-                        <p class="text-sm text-gray-600">Täglich an die frische Luft! Viel Platz zum Toben, Entdecken und Matschen.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-4 bg-green-50 p-4 rounded-2xl">
-                    <div class="bg-daisy-green p-2 rounded-xl text-white shadow-sm shrink-0">
-                        <i data-lucide="apple" class="w-6 h-6"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-1 text-daisy-dark">Gesunde Ernährung</h3>
-                        <p class="text-sm text-gray-600">Frisch gekochte, regionale und kindgerechte Mahlzeiten jeden Tag.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-4 bg-yellow-50 p-4 rounded-2xl">
-                    <div class="bg-daisy-yellow p-2 rounded-xl text-white shadow-sm shrink-0">
-                        <i data-lucide="palette" class="w-6 h-6"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-1 text-daisy-dark">Kreatives Spielen</h3>
-                        <p class="text-sm text-gray-600">Altersgerechte Förderung durch Musik, Basteln und freies Spiel.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Call to Action Banner -->
-        <div class="bg-gradient-to-r from-daisy-yellow to-yellow-300 py-6 px-6 text-center transform -skew-y-1 my-4 mx-[-10px]">
-            <div class="transform skew-y-1">
-                <h2 class="text-2xl font-bold text-daisy-dark mb-1">Wir haben noch Plätze frei!</h2>
-                <p class="text-daisy-dark font-medium text-lg">Vereinbaren Sie jetzt ein unverbindliches Kennenlernen.</p>
-            </div>
-        </div>
-
-        <!-- Footer / Contact Info -->
-        <div class="bg-white px-6 sm:px-12 py-8 text-daisy-dark">
-            <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6">
-                
-                <!-- Contact Details -->
-                <div class="space-y-3 w-full sm:w-1/2">
-                    <div class="flex items-center space-x-3 text-gray-700">
-                        <i data-lucide="map-pin" class="w-5 h-5 text-daisy-green"></i>
-                        <span>Blumenweg 12, 12345 Sonnenstadt</span>
-                    </div>
-                    <div class="flex items-center space-x-3 text-gray-700">
-                        <i data-lucide="phone" class="w-5 h-5 text-daisy-green"></i>
-                        <span class="font-bold">0123 / 456 78 90</span>
-                    </div>
-                    <div class="flex items-center space-x-3 text-gray-700">
-                        <i data-lucide="mail" class="w-5 h-5 text-daisy-green"></i>
-                        <span>hallo@villa-gaensebluemchen.de</span>
-                    </div>
-                </div>
-
-                <!-- Info Box -->
-                <div class="w-full sm:w-1/2 bg-gray-50 p-4 rounded-xl border border-gray-100 text-center sm:text-left">
-                    <h3 class="font-bold text-daisy-dark mb-2 flex items-center justify-center sm:justify-start gap-2">
-                        <i data-lucide="clock" class="w-4 h-4 text-daisy-yellow"></i>
-                        Betreuungszeiten
-                    </h3>
-                    <p class="text-sm text-gray-600">Montag - Freitag</p>
-                    <p class="text-sm font-bold text-daisy-dark">07:30 - 15:00 Uhr</p>
-                    <p class="text-xs text-gray-500 mt-1">(flexible Modelle auf Anfrage)</p>
-                </div>
-
-            </div>
-        </div>
-        
-        <!-- Bottom Accent Line -->
-        <div class="h-3 w-full bg-daisy-green"></div>
+<!-- NAVIGATION -->
+<header class="navbar">
+  <div class="navbar-inner">
+    <div class="logo-wrap">
+      <img src="LogoGaensebluemchen.svg" alt="Villa Gänseblümchen Logo" class="logo-img" />
+      <span class="logo-text">Villa Gänseblümchen</span>
     </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#willkommen">Willkommen</a></li>
+        <li><a href="#vorteile">Vorteile</a></li>
+        <li><a href="#angebot">Angebot</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#kontakt" class="btn-nav">Kontakt</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menü öffnen">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#willkommen" onclick="closeMenu()">Willkommen</a>
+    <a href="#vorteile" onclick="closeMenu()">Vorteile</a>
+    <a href="#angebot" onclick="closeMenu()">Angebot</a>
+    <a href="#team" onclick="closeMenu()">Team</a>
+    <a href="#kontakt" onclick="closeMenu()">Kontakt</a>
+  </div>
+</header>
 
-    <!-- Initialize Lucide Icons -->
-    <script>
-        lucide.createIcons();
-    </script>
+<!-- HERO -->
+<section class="hero" id="willkommen">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="daisy-deco"></div>
+    <h1>Herzlich Willkommen in der<br><span class="highlight">Villa Gänseblümchen</span></h1>
+    <p class="hero-sub">Ein Ort zum Spielen, Lachen, Lernen und Wohlfühlen.<br>
+    Liebevolle Kindertagespflege in Schlatt unter Krähen.</p>
+    <a href="#kontakt" class="btn-primary">Jetzt Kennenlernen vereinbaren 🌼</a>
+  </div>
+  <div class="hero-image-row">
+    <div class="hero-img-card">
+      <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=280&fit=crop&auto=format" alt="Kinder spielen draußen" />
+      <span>Toben & Entdecken</span>
+    </div>
+    <div class="hero-img-card">
+      <img src="https://images.unsplash.com/photo-1567473030492-533b30c5494c?w=400&h=280&fit=crop&auto=format" alt="Kinder basteln drinnen" />
+      <span>Basteln & Lernen</span>
+    </div>
+    <div class="hero-img-card">
+      <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=400&h=280&fit=crop&auto=format" alt="Glückliche Kinder" />
+      <span>Lachen & Wohlfühlen</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section class="strip-yellow">
+  <div class="strip-inner">
+    <span>🌼 Bis zu 10 Kinder in familiärer Gruppe</span>
+    <span>⏰ Mo–Fr · 07:30 – 14:00 Uhr</span>
+    <span>🌱 Ab 1 Jahr</span>
+    <span>🏡 Schlatt unter Krähen · Für Familien aus Singen</span>
+  </div>
+</section>
+
+
+<!-- ANGEBOT / ALLTAG -->
+<section class="section section-light" id="angebot">
+  <div class="container">
+    <h2 class="section-title">Unser Alltag in der Villa 🌈</h2>
+    <div class="daily-grid">
+      <div class="daily-img">
+        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=500&h=380&fit=crop&auto=format" alt="Kinder spielen im Freien" />
+      </div>
+      <div class="daily-content">
+        <div class="daily-item">
+          <span class="daily-icon">🌳</span>
+          <div>
+            <strong>Täglich an die frische Luft</strong>
+            <p>Viel Platz zum Toben, Entdecken und Matschen – Bewegung in der Natur ist fester Teil unseres Alltags.</p>
+          </div>
+        </div>
+        <div class="daily-item">
+          <span class="daily-icon">🍲</span>
+          <div>
+            <strong>Frisch gekochte Mahlzeiten</strong>
+            <p>Regionale und kindgerechte Mahlzeiten werden täglich frisch zubereitet.</p>
+          </div>
+        </div>
+        <div class="daily-item">
+          <span class="daily-icon">🎨</span>
+          <div>
+            <strong>Kreativität & Förderung</strong>
+            <p>Altersgerechte Förderung durch Musik, Basteln, Singen und freies Spiel.</p>
+          </div>
+        </div>
+        <div class="daily-item">
+          <span class="daily-icon">🏠</span>
+          <div>
+            <strong>Kindgerechte Räume</strong>
+            <p>Unsere Räume sind liebevoll eingerichtet und bieten Platz für vielfältige Entdeckungen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section" id="team">
+  <div class="container">
+    <h2 class="section-title">Unser Team 👩‍❤️‍👩</h2>
+    <p class="section-sub">In der Villa Gänseblümchen betreuen zwei gelernte Erzieherinnen mit Weiterbildung zur Kindertagespflegeperson Ihr Kind – mit Herz, Erfahrung und Begeisterung.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">🌼</div>
+        <h3>Tagesmutter 1</h3>
+        <p class="team-role">Gelernte Erzieherin<br>Kindertagespflegeperson seit 2023</p>
+        <p>Jeden Tag begleite ich Ihr Kind in seiner Entwicklung mit viel Freude, Engagement und Herzlichkeit.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">🌼</div>
+        <h3>Tagesmutter 2</h3>
+        <p class="team-role">Gelernte Erzieherin<br>Kindertagespflegeperson</p>
+        <p>Gemeinsam schaffen wir eine liebevolle Umgebung, in der sich jedes Kind sicher und geborgen fühlt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="cta-inner">
+    <span class="cta-deco">🌼🌼🌼</span>
+    <h2>Melden Sie sich jetzt für ein unverbindliches Kennenlernen!</h2>
+    <p>Wir freuen uns auf Sie und Ihr Kind. Schauen Sie einfach vorbei oder schreiben Sie uns.</p>
+    <a href="#kontakt" class="btn-primary btn-white">Jetzt Kontakt aufnehmen</a>
+  </div>
+</section>
+
+<!-- WARUM KINDERTAGESPFLEGE -->
+<section class="section" id="vorteile">
+  <div class="container">
+    <h2 class="section-title">Was macht Kindertagespflege so besonders? 🌻</h2>
+    <p class="section-sub">Kindertagespflege ist ein offizielles Angebot der Kinderbetreuung, gefördert und kontrolliert vom Jugendamt. Für Kinder unter 3 Jahren bietet die kleine Gruppe ideale Bedingungen für eine gesunde Entwicklung.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">👩‍🏫</div>
+        <h3>Professionalität</h3>
+        <p>Ausschließlich qualifizierte Tagesmütter mit Weiterbildung zur Kindertagespflegeperson betreuen die Kinder.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">👫</div>
+        <h3>Kleine Gruppen</h3>
+        <p>Bis zu maximal 5 Kinder pro Tagesmutter – ideal für individuelle und behutsame Begleitung jedes Kindes.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏛️</div>
+        <h3>Öffentliche Förderung</h3>
+        <p>Das Jugendamt fördert, vermittelt und überwacht – Eltern zahlen einen Eigenanteil, vergleichbar mit der Kita.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <h3>Hohe Flexibilität</h3>
+        <p>Flexible Betreuungsmodelle, die sich an den Bedürfnissen Ihrer Familie orientieren.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💛</div>
+        <h3>Konstante Bezugsperson</h3>
+        <p>Ihr Kind hat eine feste Bezugsperson – das schafft Sicherheit und Vertrauen in der wichtigsten Entwicklungsphase.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💰</div>
+        <h3>Vergleichbare Kosten</h3>
+        <p>Die Kosten richten sich nach einer Tabelle des Jugendamts – nicht teurer als Krippe oder Kita.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section class="gallery-section">
+  <h2 class="section-title" style="text-align:center;padding:2rem 1rem 1rem;">Einblicke in unseren Alltag 📸</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item tall">
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=600&fit=crop&auto=format" alt="Kind malt" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1565608438257-fac3c27bdbf3?w=400&h=280&fit=crop&auto=format" alt="Kinder im Garten" />
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=280&fit=crop&auto=format" alt="Kinder lachen" />
+    </div>
+    <div class="gallery-item wide">
+      <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=280&fit=crop&auto=format" alt="Spielgruppe draußen" />
+    </div>
+  </div>
+</section>
+
+
+<!-- KONTAKT -->
+<section class="section section-light" id="kontakt">
+  <div class="container">
+    <h2 class="section-title">Kontakt & Anmeldung ✉️</h2>
+    <div class="kontakt-grid">
+      <div class="kontakt-info">
+        <h3>Villa Gänseblümchen</h3>
+        <p>Kindertagespflege in Schlatt unter Krähen<br>
+        Betreuungsangebot für Familien aus Singen und Ortsteilen</p>
+        <ul class="kontakt-list">
+          <li>⏰ <strong>Öffnungszeiten:</strong> Mo–Fr, 07:30 – 15:00 Uhr</li>
+          <li>📍 <strong>Ort:</strong> Schlatt unter Krähen</li>
+          <li>✉️ <strong>Email:</strong> email@email.de</li>
+          <li>📞 <strong>Telefon:</strong> 0049 170 6272828</li>
+          <li>🌱 <strong>Aufnahmealter:</strong> ab 1 Jahr</li>
+          <li>👧 <strong>Gruppenkapazität:</strong> bis zu 10 Kinder gesamt</li>
+        </ul>
+        <p style="margin-top:1rem;font-size:0.95rem;color:#777;">Flexible Betreuungsmodelle auf Anfrage möglich.</p>
+      </div>
+      <form class="kontakt-form" id="kontaktForm">
+        <input type="hidden" name="access_key" value="a294e4cf-cd9e-4966-80c4-b6f76998036f" />
+        <input type="hidden" name="subject" value="Neue Anfrage – Villa Gänseblümchen" />
+        <h3>Schreiben Sie uns</h3>
+        <div class="form-row">    
+          <div class="form-group">
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required />
+          </div>
+          <div class="form-group">
+            <label for="nachname">Nachname</label>
+            <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" placeholder="ihre@email.de" required />
+        </div>
+        <div class="form-group">
+          <label for="telefon">Telefon (optional)</label>
+          <input type="tel" id="telefon" name="telefon" placeholder="+49 ..." />
+        </div>
+        <div class="form-group">
+          <label for="alter">Alter Ihres Kindes</label>
+          <input type="text" id="alter" name="alter" placeholder="z.B. 18 Monate" />
+        </div>
+        <div class="form-group">
+          <label for="nachricht">Nachricht</label>
+          <textarea id="nachricht" name="nachricht" rows="4" placeholder="Ihre Nachricht an uns..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Nachricht senden 🌼</button>
+        <p class="form-note">Wir melden uns schnellstmöglich bei Ihnen zurück.</p>
+        <div id="formSuccess" class="form-success" style="display:none;">
+          🌼 Vielen Dank! Wir haben Ihre Nachricht erhalten und melden uns bald.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="LogoGaensebluemchen.svg" alt="Villa Gänseblümchen" class="footer-logo-img"/>
+      <span>Villa Gänseblümchen</span>
+    </div>
+    <div class="footer-links">
+      <a href="#willkommen">Willkommen</a>
+      <a href="#vorteile">Vorteile</a>
+      <a href="#angebot">Angebot</a>
+      <a href="#team">Team</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <p class="footer-copy">© 2025 Villa Gänseblümchen · Kindertagespflege Schlatt unter Krähen</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
