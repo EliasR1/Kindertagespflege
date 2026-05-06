@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Villa Gänseblümchen – Kindertagespflege in Schlatt unter Krähen</title>
+  <title>Villa Gänseblümchen – Kindertagespflege</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -17,26 +17,28 @@
 <header class="navbar">
   <div class="navbar-inner">
     <div class="logo-wrap">
-      <img src="LogoGaensebluemchen.svg" alt="Villa Gänseblümchen Logo" class="logo-img" />
-      <span class="logo-text">Villa Gänseblümchen</span>
+      <a href="index.html">
+        <img src="LogoGaensebluemchen.svg" alt="Villa Gänseblümchen Logo" class="logo-img" />
+      </a>
+      <a href="index.html" class="logo-text">Villa Gänseblümchen</a>
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#willkommen">Willkommen</a></li>
-        <li><a href="#vorteile">Vorteile</a></li>
-        <li><a href="#angebot">Angebot</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#kontakt" class="btn-nav">Kontakt</a></li>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="konzept.html">Päd. Konzept</a></li>
+        <li><a href="raeume.html">Unsere Räume</a></li>
+        <li><a href="kosten.html">Kosten</a></li>
+        <li><a href="index.html#kontakt" class="btn-nav">Kontakt</a></li>
       </ul>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Menü öffnen">&#9776;</button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#willkommen" onclick="closeMenu()">Willkommen</a>
-    <a href="#vorteile" onclick="closeMenu()">Vorteile</a>
-    <a href="#angebot" onclick="closeMenu()">Angebot</a>
-    <a href="#team" onclick="closeMenu()">Team</a>
-    <a href="#kontakt" onclick="closeMenu()">Kontakt</a>
+    <a href="index.html" onclick="closeMenu()">Startseite</a>
+    <a href="konzept.html" onclick="closeMenu()">Päd. Konzept</a>
+    <a href="raeume.html" onclick="closeMenu()">Unsere Räume</a>
+    <a href="kosten.html" onclick="closeMenu()">Kosten</a>
+    <a href="index.html#kontakt" onclick="closeMenu()">Kontakt</a>
   </div>
 </header>
 
@@ -47,22 +49,10 @@
     <div class="daisy-deco"></div>
     <h1>Herzlich Willkommen in der<br><span class="highlight">Villa Gänseblümchen</span></h1>
     <p class="hero-sub">Ein Ort zum Spielen, Lachen, Lernen und Wohlfühlen.<br>
-    Liebevolle Kindertagespflege in Schlatt unter Krähen.</p>
-    <a href="#kontakt" class="btn-primary">Jetzt Kennenlernen vereinbaren 🌼</a>
+    Ihre Liebevolle Kindertagespflege in Schlatt unter Krähen.</p>
+    <a href="#kontakt" class="btn-primary">Jetzt Kennenlernen vereinbaren</a>
+    <div class="scroll-arrow" onclick="document.querySelector('#angebot').scrollIntoView({behavior:'smooth'})">↓</div>
   </div>
-  <div class="hero-image-row">
-    <div class="hero-img-card">
-      <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&h=280&fit=crop&auto=format" alt="Kinder spielen draußen" />
-      <span>Toben & Entdecken</span>
-    </div>
-    <div class="hero-img-card">
-      <img src="https://images.unsplash.com/photo-1567473030492-533b30c5494c?w=400&h=280&fit=crop&auto=format" alt="Kinder basteln drinnen" />
-      <span>Basteln & Lernen</span>
-    </div>
-    <div class="hero-img-card">
-      <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=400&h=280&fit=crop&auto=format" alt="Glückliche Kinder" />
-      <span>Lachen & Wohlfühlen</span>
-    </div>
   </div>
 </section>
 
@@ -90,7 +80,7 @@
           <span class="daily-icon">🌳</span>
           <div>
             <strong>Täglich an die frische Luft</strong>
-            <p>Viel Platz zum Toben, Entdecken und Matschen – Bewegung in der Natur ist fester Teil unseres Alltags.</p>
+            <p>Viel Platz zum Toben, Entdecken und Matschen – Bewegung im eigenen Garten und in der Natur ist fester Teil unseres Alltags.</p>
           </div>
         </div>
         <div class="daily-item">
@@ -126,13 +116,17 @@
     <p class="section-sub">In der Villa Gänseblümchen betreuen zwei gelernte Erzieherinnen mit Weiterbildung zur Kindertagespflegeperson Ihr Kind – mit Herz, Erfahrung und Begeisterung.</p>
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-avatar">🌼</div>
+        <div class="team-avatar">
+          <img src="foto-tagesmutter1.jpg" alt="Tagesmutter 1" class="team-avatar-img" />
+        </div>
         <h3>Tagesmutter 1</h3>
         <p class="team-role">Gelernte Erzieherin<br>Kindertagespflegeperson seit 2023</p>
         <p>Jeden Tag begleite ich Ihr Kind in seiner Entwicklung mit viel Freude, Engagement und Herzlichkeit.</p>
       </div>
       <div class="team-card">
-        <div class="team-avatar">🌼</div>
+        <div class="team-avatar">
+          <img src="foto-tagesmutter2.jpg" alt="Tagesmutter 2" class="team-avatar-img" />
+        </div>
         <h3>Tagesmutter 2</h3>
         <p class="team-role">Gelernte Erzieherin<br>Kindertagespflegeperson</p>
         <p>Gemeinsam schaffen wir eine liebevolle Umgebung, in der sich jedes Kind sicher und geborgen fühlt.</p>
@@ -144,7 +138,7 @@
 <!-- CTA BANNER -->
 <section class="cta-banner">
   <div class="cta-inner">
-    <span class="cta-deco">🌼🌼🌼</span>
+    <span class="cta-deco"></span>
     <h2>Melden Sie sich jetzt für ein unverbindliches Kennenlernen!</h2>
     <p>Wir freuen uns auf Sie und Ihr Kind. Schauen Sie einfach vorbei oder schreiben Sie uns.</p>
     <a href="#kontakt" class="btn-primary btn-white">Jetzt Kontakt aufnehmen</a>
@@ -154,7 +148,7 @@
 <!-- WARUM KINDERTAGESPFLEGE -->
 <section class="section" id="vorteile">
   <div class="container">
-    <h2 class="section-title">Was macht Kindertagespflege so besonders? 🌻</h2>
+    <h2 class="section-title">Was macht die Kindertagespflege so besonders? 🌻</h2>
     <p class="section-sub">Kindertagespflege ist ein offizielles Angebot der Kinderbetreuung, gefördert und kontrolliert vom Jugendamt. Für Kinder unter 3 Jahren bietet die kleine Gruppe ideale Bedingungen für eine gesunde Entwicklung.</p>
     <div class="cards-grid">
       <div class="card">
@@ -260,7 +254,7 @@
           <label for="nachricht">Nachricht</label>
           <textarea id="nachricht" name="nachricht" rows="4" placeholder="Ihre Nachricht an uns..."></textarea>
         </div>
-        <button type="submit" class="btn-primary btn-full">Nachricht senden 🌼</button>
+        <button type="submit" class="btn-primary btn-full">Nachricht senden</button>
         <p class="form-note">Wir melden uns schnellstmöglich bei Ihnen zurück.</p>
         <div id="formSuccess" class="form-success" style="display:none;">
           🌼 Vielen Dank! Wir haben Ihre Nachricht erhalten und melden uns bald.
@@ -278,11 +272,12 @@
       <span>Villa Gänseblümchen</span>
     </div>
     <div class="footer-links">
-      <a href="#willkommen">Willkommen</a>
-      <a href="#vorteile">Vorteile</a>
-      <a href="#angebot">Angebot</a>
-      <a href="#team">Team</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="index.html">Startseite</a>
+      <a href="konzept.html">Päd. Konzept</a>
+      <a href="raeume.html">Unsere Räume</a>
+      <a href="kosten.html">Kosten</a>
+      <a href="index.html#kontakt">Kontakt</a>
+      <a href="impressum.html">Impressum & Datenschutz</a>
     </div>
     <p class="footer-copy">© 2025 Villa Gänseblümchen · Kindertagespflege Schlatt unter Krähen</p>
   </div>

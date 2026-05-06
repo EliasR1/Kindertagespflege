@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unsere Räume – Villa Gänseblümchen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header class="navbar">
+  <div class="navbar-inner">
+    <div class="logo-wrap">
+      <a href="index.html">
+        <img src="LogoGaensebluemchen.svg" alt="Villa Gänseblümchen Logo" class="logo-img" />
+      </a>
+      <a href="index.html" class="logo-text">Villa Gänseblümchen</a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="konzept.html">Päd. Konzept</a></li>
+        <li><a href="raeume.html">Unsere Räume</a></li>
+        <li><a href="kosten.html">Kosten</a></li>
+        <li><a href="index.html#kontakt" class="btn-nav">Kontakt</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menü öffnen">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Startseite</a>
+    <a href="konzept.html" onclick="closeMenu()">Päd. Konzept</a>
+    <a href="raeume.html" onclick="closeMenu()">Unsere Räume</a>
+    <a href="kosten.html" onclick="closeMenu()">Kosten</a>
+    <a href="index.html#kontakt" onclick="closeMenu()">Kontakt</a>
+  </div>
+</header>
+<section class="subpage-hero">
+  <div class="subpage-hero-inner">
+    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+    <h1>Unsere Räume & kleine Gruppe</h1>
+    <p>Ein liebevoll eingerichteter Ort zum Entdecken, Spielen und Wohlfühlen.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container subpage-content">
+
+    <div class="subpage-block">
+      <h2>👶 Kleine Gruppe – großer Vorteil</h2>
+      <p>In der Villa Gänseblümchen betreuen <strong>zwei Tagesmütter</strong> jeweils bis zu 5 Kinder – insgesamt maximal 10 Kinder. Diese bewusst kleine Gruppengröße ist ein zentraler Vorteil der Kindertagespflege: jedes Kind bekommt die individuelle Aufmerksamkeit, die es braucht.</p>
+      <p>Besonders für Kinder unter 3 Jahren ist eine feste Bezugsperson entscheidend – sie schafft Sicherheit, Vertrauen und eine geborgene Entwicklungsumgebung.</p>
+    </div>
+
+    <div class="rooms-grid">
+      <div class="room-card">
+        <div class="room-icon">🏃</div>
+        <h3>Bewegungsraum</h3>
+        <p>Genug Platz zum Toben, Krabbeln und Entdecken – drinnen wie draußen.</p>
+      </div>
+      <div class="room-card">
+        <div class="room-icon">🎨</div>
+        <h3>Kreativbereich</h3>
+        <p>Malen, Basteln, Kneten – altersgerechtes Material für kleine Künstler.</p>
+      </div>
+      <div class="room-card">
+        <div class="room-icon">😴</div>
+        <h3>Ruhebereich</h3>
+        <p>Gemütlicher Rückzugsort für den Mittagsschlaf und ruhige Momente.</p>
+      </div>
+      <div class="room-card">
+        <div class="room-icon">🌳</div>
+        <h3>Garten & Außenbereich</h3>
+        <p>Sandkasten, Wiese und Spielmöglichkeiten direkt vor der Tür – täglich draußen.</p>
+      </div>
+    </div>
+
+    <div class="subpage-block">
+      <h2>🛡️ Sicherheit geht vor</h2>
+      <p>Alle Räume sind kindgerecht gesichert: Steckdosenschutz, sichere Möbel, kindgerechtes Spielzeug. Die Einrichtung wird regelmäßig überprüft und aktualisiert, damit sich die Kinder sicher und frei bewegen können.</p>
+    </div>
+
+    <div class="subpage-block">
+      <h2>📍 Wo wir sind</h2>
+      <p>Unsere Kindertagespflege befindet sich in <strong>Schlatt unter Krähen</strong> und richtet sich an Familien aus Singen und den umliegenden Ortsteilen.</p>
+      <p>Für genaue Adressinformationen und Anfahrt kontaktieren Sie uns gerne direkt.</p>
+    </div>
+
+    <div class="subpage-cta">
+      <h3>Schauen Sie vorbei!</h3>
+      <p>Am besten lernt man uns beim persönlichen Kennenlernen kennen – melden Sie sich einfach.</p>
+      <a href="index.html#kontakt" class="btn-primary">Jetzt Kontakt aufnehmen</a>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="LogoGaensebluemchen.svg" alt="Villa Gänseblümchen" class="footer-logo-img"/>
+      <span>Villa Gänseblümchen</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Startseite</a>
+      <a href="konzept.html">Päd. Konzept</a>
+      <a href="raeume.html">Unsere Räume</a>
+      <a href="kosten.html">Kosten</a>
+      <a href="index.html#kontakt">Kontakt</a>
+      <a href="impressum.html">Impressum & Datenschutz</a>
+    </div>
+    <p class="footer-copy">© 2025 Villa Gänseblümchen · Kindertagespflege Schlatt unter Krähen</p>
+  </div>
+</footer>
+<script src='script.js'></script>
+</body>
+</html>

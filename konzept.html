@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pädagogisches Konzept – Villa Gänseblümchen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header class="navbar">
+  <div class="navbar-inner">
+    <div class="logo-wrap">
+      <a href="index.html">
+        <img src="LogoGaensebluemchen.svg" alt="Villa Gänseblümchen Logo" class="logo-img" />
+      </a>
+      <a href="index.html" class="logo-text">Villa Gänseblümchen</a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="konzept.html">Päd. Konzept</a></li>
+        <li><a href="raeume.html">Unsere Räume</a></li>
+        <li><a href="kosten.html">Kosten</a></li>
+        <li><a href="index.html#kontakt" class="btn-nav">Kontakt</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menü öffnen">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Startseite</a>
+    <a href="konzept.html" onclick="closeMenu()">Päd. Konzept</a>
+    <a href="raeume.html" onclick="closeMenu()">Unsere Räume</a>
+    <a href="kosten.html" onclick="closeMenu()">Kosten</a>
+    <a href="index.html#kontakt" onclick="closeMenu()">Kontakt</a>
+  </div>
+</header>
+<section class="subpage-hero">
+  <div class="subpage-hero-inner">
+    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+    <h1>Pädagogisches Konzept</h1>
+    <p>Wie wir Ihr Kind begleiten, fördern und wachsen lassen.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container subpage-content">
+
+    <div class="subpage-block">
+      <h2>🎓 Bildung und Förderung in der frühkindlichen Phase</h2>
+      <p>Für kleine Kinder ist der gesamte Tag ein spannender Lernprozess: die Umgebung wird erforscht, verschiedenste Eindrücke werden verarbeitet und die Sinne ausgiebig getestet. Sie lernen viel über ihren Körper, die verschiedenen Arten von Kommunikation und imitieren das Verhalten von Erwachsenen sowie anderen Kindern. Für eine gute Entwicklung ist es wichtig, die Kinder in einem behüteten Umfeld, immer wieder zu ermutigen neue Erfahrungen zu sammeln, um daraus langfristig zu lernen.</p>
+      <p>Wir möchten mit Ihrem Kind gemeinsam auf eine große Entdeckungsreise gehen, seine Neugier wecken und es ermutigen, immer wieder neue Erfahrungen zu sammeln. Das Ziel: selbstständiger werden und mehr Vertrauen in die eigenen Fähigkeiten gewinnen. Kinder sollen lernen, dass durch ihre Handlungen und Ihre Kommunikation Reaktionen hervorgerufen werden, die dem Kind ermöglichen Einfluss auf seine Umwelt zu nehmen.</p>
+      <p>Uns ist es besonders wichtig, ganz individuell auf die Bedürfnisse und Fähigkeiten Ihres Kindes einzugehen, um es gezielt zu unterstützen.</p>
+      <div class="tag-list">
+        <span>🗣️ Sprache & Kommunikation</span>
+        <span>👫 Soziales Leben</span>
+        <span>🌿 Natur</span>
+        <span>🎵 Musik & Gesang</span>
+        <span>🎨 Malen & Basteln</span>
+        <span>🏃 Bewegung</span>
+      </div>
+    </div>
+
+    <div class="subpage-block">
+      <h2>🛡️ Sicherheit, Gesundheit & Ernährung</h2>
+      <p>Ein sicheres Umfeld ist Grundvoraussetzung für eine unbeschwerte Entwicklung. Unsere Räume in Schlatt unter Krähen sind kindgerecht gesichert – von Steckdosenschutz über sichere Kindermöbel bis hin zu kindgerechtem Spielzeug.</p>
+      <p>Gute Hygiene ist in allen Bereichen selbstverständlich. Täglich werden <strong>frische, regionale und abwechslungsreiche Mahlzeiten</strong> zubereitet. Die Kinder können selbst bestimmen, was und wie viel sie essen. Auf Allergien und besondere Ernährungsbedürfnisse gehen wir selbstverständlich ein.</p>
+    </div>
+
+    <div class="subpage-block">
+      <h2>🎪 Spaß an Bewegung und Kreativität</h2>
+      <p>Freies Spiel, Bewegung und Kreativität nehmen den größten Teil unseres Tagesablaufs ein. Unsere Räume bieten genügend Platz zum Toben – und natürlich gehen wir täglich nach draußen: Spielplatz, Garten, Natur erkunden.</p>
+      <p>Auch Musik kommt nicht zu kurz: durch gemeinsames Singen erweitern die Kinder ihren Wortschatz. Mit verschiedenen Instrumenten und Alltagsgegenständen werden die kleinen Besucher zu echten „Komponisten".</p>
+    </div>
+
+    <div class="subpage-block">
+      <h2>🏡 Eingewöhnung</h2>
+      <p>Die Eingewöhnungsphase ist individuell gestaltet – jedes Kind braucht sein eigenes Tempo. Wir orientieren uns am <strong>Berliner Eingewöhnungsmodell</strong>: Eltern begleiten ihr Kind zunächst und ziehen sich schrittweise zurück.</p>
+      <p>Je nach Kind dauert die Eingewöhnung <strong>zwei bis vier Wochen</strong>. Die Phase endet, wenn sich Ihr Kind wohl fühlt – und auch Sie ein gutes Gefühl haben.</p>
+    </div>
+
+    <div class="subpage-block">
+      <h2>🤝 Erziehungspartnerschaft mit den Eltern</h2>
+      <p>Eine offene Zusammenarbeit zwischen Eltern und uns ist für das Kind sehr wichtig. In jeder Bring- und Holsituation nehmen wir uns Zeit für ein kurzes Gespräch über den Tag, Entwicklungsschritte und individuelle Fragen.</p>
+    </div>
+
+    <div class="subpage-block">
+      <h2>🕐 Routine im Tagesablauf</h2>
+      <p>Unser Tag ist in wiederkehrende Abschnitte unterteilt – Hände waschen, Mahlzeiten, Mittagsschlaf strukturieren den Tag und geben Kindern Sicherheit. Zwischen diesen festen Strukturen gibt es täglich wechselnde Angebote.</p>
+    </div>
+
+    <div class="subpage-block">
+      <h2>📁 Entwicklungsdokumentation</h2>
+      <p>Die stetige Dokumentation der Entwicklung ist für die gezielte Förderung wichtig. Entwicklungsschritte werden in verschiedenen Formaten festgehalten: Erinnerungsordner, Fotos sowie Bastel- und Malarbeiten der Kinder.</p>
+    </div>
+
+    <div class="subpage-cta">
+      <h3>Neugierig geworden?</h3>
+      <p>Lernen Sie uns unverbindlich kennen – wir freuen uns auf Sie und Ihr Kind.</p>
+      <a href="index.html#kontakt" class="btn-primary">Jetzt Kontakt aufnehmen</a>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="LogoGaensebluemchen.svg" alt="Villa Gänseblümchen" class="footer-logo-img"/>
+      <span>Villa Gänseblümchen</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Startseite</a>
+      <a href="konzept.html">Päd. Konzept</a>
+      <a href="raeume.html">Unsere Räume</a>
+      <a href="kosten.html">Kosten</a>
+      <a href="index.html#kontakt">Kontakt</a>
+      <a href="impressum.html">Impressum & Datenschutz</a>
+    </div>
+    <p class="footer-copy">© 2025 Villa Gänseblümchen · Kindertagespflege Schlatt unter Krähen</p>
+  </div>
+</footer>
+<script src='script.js'></script>
+</body>
+</html>
